@@ -5,4 +5,3 @@ FOR /F "tokens=1,2 delims= " %%G IN (%TEMP%\fiokok.txt) DO cmdkey.exe /delete:%%
 del "%TEMP%\List.txt" /f /q
 del "%TEMP%\fiokok.txt" /f /q
 echo Minden elmentett fiok sikeresen torolve
-pause
