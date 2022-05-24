@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while read sor
+	do
+	echo $sor | wc -c
+	done < $
+echo

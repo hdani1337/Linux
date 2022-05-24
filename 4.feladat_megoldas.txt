@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo -n "Kérek egy szót: "
+read a
+echo -n "Kérek egy második szót: "
+read b
+echo -n "Kérek egy harmadik szót: "
+read c
+echo -n "A legrövidebb szó: "
+
+if(($a | wc -c < $b | wc -c && $a | wc -c < $c | wc -c))
+	then
+		echo $a
+fi
+
+if (($b | wc -c < $a | wc -c && $b | wc -c < $c | wc -c))
+	then
+		echo $b
+fi
+
+if (($c | wc -c < $a | wc -c && $c | wc -c < $b))
+	then
+		echo $c
+fi

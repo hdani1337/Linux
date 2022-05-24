@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cat film
+echo
+cat film | cut -c 6-9
+echo 
+cat film | cut -d\; -f 4
+echo
+cat film | grep 18$
+echo
+cat film | grep 12$ |cut -d\; -f 1

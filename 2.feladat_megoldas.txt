@@ -1,0 +1,10 @@
+#!/bin/bash
+
+fajl=$1
+
+ls /usr/bin > $fajl
+wc -l $fajl
+echo head -n 8 $fajl
+echo -n "Kérek egy számot"
+read darab
+tail -n $darab $fajl | tail -n 1

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mkdir Fehér Fekte Szürke
+cd Fehér
+Echo "RGB = 000" > RGB.txt
+cp RGB.txt ../Fekete
+cd ../Szürke
+ln -s ../Fehér/RGB.txt RGB2.txt
+cd..
+rm -r Fehér
